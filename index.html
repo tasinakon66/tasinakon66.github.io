@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRA Studio | Mobile games from Dhaka's streets</title>
+<meta name="description" content="TRA Studio is an independent mobile game studio in Melbourne making games rooted in Bangladesh: Road to the Sun, Checkpost and Zombie Dhaka.">
+<meta property="og:title" content="TRA Studio">
+<meta property="og:description" content="Mobile games from Dhaka's streets, made in Melbourne.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="theme-color" content="#060914">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#games">Skip to the games</a>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="TRA Studio home">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon points="50,5 89,27.5 89,72.5 50,95 11,72.5 11,27.5" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/>
+      <polygon points="33,30 45,30 66,50 45,70 33,70 54,50" fill="currentColor"/>
+      <polygon class="tip" points="22,44 34,44 40,50 34,56 22,56 28,50"/>
+    </svg>
+    <span>TRA Studio</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="#games">Games</a>
+    <a href="#studio">Studio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO: gameplay loop behind big type -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="media/hero-poster.jpg" aria-hidden="true">
+      <source src="media/hero-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <a class="badge" href="#road-to-the-sun" aria-label="Road to the Sun is now in testing">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+        <text><textPath href="#ring" startOffset="0" textLength="462" lengthAdjust="spacing">Road to the Sun • now in testing • </textPath></text>
+      </svg>
+      <span class="badge-core" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 3l2.2 5.6L20 9.3l-4.4 3.8L17 19l-5-3.1L7 19l1.4-5.9L4 9.3l5.8-.7z"/></svg>
+      </span>
+    </a>
+
+    <div class="hero-copy">
+      <h1 class="hero-title">
+        <span class="line"><span>Games from</span></span>
+        <span class="line"><span>Dhaka's streets,</span></span>
+        <span class="line"><span>made in Melbourne.</span></span>
+      </h1>
+      <p class="bn" lang="bn">ঢাকার গল্প, ফোনের পর্দায়</p>
+      <div class="actions">
+        <button class="btn btn-lime js-trailer" type="button">
+          <svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+          Watch the trailer
+        </button>
+        <a class="btn btn-ink" href="#games">See all games</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Road to the Sun</span><i></i><span>Checkpost</span><i></i><span>Zombie Dhaka</span><i></i><span lang="bn">ঢাকার গল্প</span><i></i><span>Made in Melbourne</span><i></i>
+      <span>Road to the Sun</span><i></i><span>Checkpost</span><i></i><span>Zombie Dhaka</span><i></i><span lang="bn">ঢাকার গল্প</span><i></i><span>Made in Melbourne</span><i></i>
+    </div>
+  </div>
+
+  <section id="games" aria-label="Our games">
+
+    <!-- ROAD TO THE SUN -->
+    <article id="road-to-the-sun" class="game g-rts">
+      <h2 class="big-title" data-drift><span>Road to the Sun</span></h2>
+      <div class="g-body">
+        <div class="g-text">
+          <p class="status"><span class="dot"></span>Closed testing on Google Play</p>
+          <p>Tap to flip between the floor and the ceiling, and race your car from Mars all the way to the Sun while something huge chases you. Nine planets, 135 levels, a boss guarding every world and a comic-book story in between.</p>
+          <div class="actions">
+            <button class="btn btn-lime js-trailer" type="button">
+              <svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+              Watch the trailer
+            </button>
+            <a class="btn btn-ink" href="mailto:tragaming.studio@gmail.com?subject=I%20want%20to%20test%20Road%20to%20the%20Sun">Become a tester</a>
+          </div>
+        </div>
+        <div class="collage">
+          <img class="shot s1" src="assets/rts-shot-7.webp" width="1280" height="720" loading="lazy" alt="The Solar Wraith, the final boss on the Sun">
+          <img class="shot s2" src="assets/rts-shot-3.webp" width="1280" height="720" loading="lazy" alt="An ice-world boss with jagged teeth chasing the car">
+          <img class="shot s3" src="assets/rts-shot-1.webp" width="1280" height="720" loading="lazy" alt="Flipping gravity to dodge a boss in deep space">
+        </div>
+      </div>
+    </article>
+
+    <!-- CHECKPOST -->
+    <article id="checkpost" class="game g-cp">
+      <div class="cp-scene" aria-hidden="true">
+        <img class="cp-bg" src="assets/cp-street.webp" width="768" height="1376" loading="lazy" alt="">
+        <img class="cp-rick" src="assets/cp-rickshaw.webp" width="800" height="800" loading="lazy" alt="">
+        <img class="cp-kalam" src="assets/cp-kalam.webp" width="700" height="700" loading="lazy" alt="">
+      </div>
+      <h2 class="big-title" data-drift><span>Checkpost</span></h2>
+      <div class="g-text">
+        <p class="stamp" aria-hidden="true">Night 1 out now</p>
+        <p class="status"><span class="dot"></span>Playable on itch.io</p>
+        <p>One night on duty as a Dhaka traffic sergeant. Wave down rickshaws and CNGs, check their papers with your torch, and decide what happens next: a fine, an arrest, or a little <i lang="bn-Latn">ghush</i>. The rent is due, and the OC is watching.</p>
+        <div class="actions">
+          <a class="btn btn-lime" href="https://tasinakon66.itch.io/checkpost" target="_blank" rel="noopener">Play Night 1</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ZOMBIE DHAKA -->
+    <article id="zombie-dhaka" class="game g-zd">
+      <div class="g-body">
+        <div class="g-text">
+          <h2 class="visually-hidden">Zombie Dhaka</h2>
+          <img class="zd-logo" src="assets/zd-logo.webp" width="700" height="420" loading="lazy" alt="Zombie Dhaka">
+          <p class="status"><span class="dot dot-ink"></span>In development</p>
+          <p>The city has turned and the road out is packed with the undead. Lead your squad down the street, pick the right gates to grow your army, and survive the boss waiting at the end of the road.</p>
+          <div class="actions">
+            <a class="btn btn-ink" href="https://instagram.com/tragaming.studio" target="_blank" rel="noopener">Follow development</a>
+          </div>
+        </div>
+        <figure class="zd-shot">
+          <img src="assets/zd-street.webp" width="1100" height="720" loading="lazy" alt="Three in-game views of a squad fighting zombies on a Dhaka street lined with shops">
+          <figcaption class="sticker">Early build</figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <section id="studio" class="studio" aria-labelledby="studio-h">
+    <h2 id="studio-h" class="section-title">The studio</h2>
+    <div class="studio-grid">
+      <p class="studio-lead">TRA Studio is one person for now: Tasin Rahman Akon, a computer science student at La Trobe University who grew up in Bangladesh and builds games in Godot from Melbourne.</p>
+      <dl class="facts">
+        <div><dt>Founded</dt><dd>2026, Melbourne</dd></div>
+        <div><dt>Engine</dt><dd>Godot 4</dd></div>
+        <div><dt>Platform</dt><dd>Android first</dd></div>
+        <div><dt>Made for</dt><dd>Anyone who has been stuck in Dhaka traffic</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="contact-title">Say hello</h2>
+    <p>Testing, press, collaborations, or just to tell us your high score.</p>
+    <a class="mail" href="mailto:tragaming.studio@gmail.com">tragaming.studio@gmail.com</a>
+    <ul class="socials">
+      <li><a href="https://instagram.com/tragaming.studio" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/company/trastudio" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://tasinakon66.itch.io" target="_blank" rel="noopener">itch.io</a></li>
+      <li><a href="mailto:tasinakon66@gmail.com">Email Tasin directly</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 TRA Studio, Melbourne, Australia</p>
+</footer>
+
+<dialog class="trailer" aria-label="Road to the Sun trailer">
+  <button class="close" type="button" aria-label="Close trailer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <video controls playsinline preload="none" poster="media/hero-poster.jpg">
+    <source src="media/trailer.mp4" type="video/mp4">
+  </video>
+</dialog>
+
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
